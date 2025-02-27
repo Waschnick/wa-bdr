@@ -1,93 +1,94 @@
-# Wa Map 01
+# 🗺️ WorkAdventure Map Starter Kit
 
+<a href="https://discord.gg/G6Xh9ZM9aR" target="blank"><img src="https://img.shields.io/discord/821338762134290432.svg?style=flat&label=Join%20Community&color=7289DA" alt="Join Community Badge"/></a>
+<a href="https://x.com/workadventure_" target="blank"><img src="https://img.shields.io/twitter/follow/workadventure_.svg?style=social" /></a>
+![visitors](https://vbr.nathanchung.dev/badge?page_id=workadventure.map-starter-kit&color=00cf00)
 
+![office map thumbnail](./office.png)
 
-## Getting started
+🗺️ This is a starter kit to help you build your own map for [WorkAdventure](https://workadventu.re).
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+📚 To understand how to use this starter kit, follow [our tutorial](https://docs.workadventu.re/map-building/tiled-editor/).
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+👨🏻‍🔧 If you have any questions, feel free to ask in the [WorkAdventure office](https://play.staging.workadventu.re/@/tcm/workadventure/wa-village).
 
-## Add your files
+## 🚀 Upload your map
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+In the `.env` file, you can set your upload strategy to `GH_PAGES` (default) or `MAP_STORAGE`. Simply comment out the option you don't want to use.
 
+Uploading a map using [GitHub Pages](https://docs.github.com/pages) will host your project on GitHub servers, and it's the most straightforward way to add new maps to your world.
+
+Uploading a map using the [WA map storage](https://docs.workadventu.re/map-building/tiled-editor/publish/wa-hosted) will host your project on WA servers. It's a bit more difficult to set up, but it comes with great advantages, like being able to have private repositories.
+
+## 🗂️ Structure
+
+We recommend following this file structure:
+
+- *`public/`*: Static files like PDFs or audio files
+- *`src/`*: Script files or design source files
+- *`tilesets/`*: All PNG tilesets
+
+> [!TIP]
+> - If you want to use more than one map file, just add the new map file in the root folder (we recommend creating a copy of *office.tmj* and editing it to avoid any mistakes).
+> - We recommend using **512x512** images for the map thumbnails.
+> - If you are going to create custom websites to embed in the map, please reference the HTML files in the `input` option in *vite.config.js*.
+
+## 📜 Requirements
+
+- Node.js version >= 18
+
+## Installation and testing
+
+## 🛠️ Installation and Testing
+
+With npm installed (which comes with [Node.js](https://nodejs.org/en/)), run the following command in the root directory of the project:
+
+```bash
+npm install
 ```
-cd existing_repo
-git remote add origin https://gitlab.partner.bdr.de/sebastian.waschnick/wa-map-01.git
-git branch -M main
-git push -uf origin main
+
+Then, you can test your map by running:
+
+```bash
+npm run dev
 ```
 
-## Integrate with your tools
+You can also test the optimized map as it will be in production by running:
 
-- [ ] [Set up project integrations](https://gitlab.partner.bdr.de/sebastian.waschnick/wa-map-01/-/settings/integrations)
+```bash
+npm run build
+npm run prod
+```
 
-## Collaborate with your team
+You can manually [upload your map to the WA Map Storage]([WA Map Storage](https://github.com/workadventure/upload-maps)) by running:
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+```bash
+npm run upload
+```
 
-## Test and Deploy
+The three important variables that control the upload feature are:
 
-Use the built-in continuous integration in GitLab.
+1. `MAP_STORAGE_URL` *(local: created in .env by the upload command / CI: to be added as a Github secret optionally)*
+2. `MAP_STORAGE_API_KEY` *(local: created in .env.secret by the upload command / CI: to be added as a Github secret)*
+3. `UPLOAD_DIRECTORY` *(local: created in .env by the upload command / CI: to be added as a Github secret optionally)*
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+Read [the documentation](https://docs.workadventu.re/map-building/tiled-editor/publish/wa-hosted) to learn more about the upload feature.
 
-***
+## 📜 Licenses
 
-# Editing this README
+This project contains multiple licenses as follows:
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+* [Code license](./LICENSE.code) *(all files except those for other licenses)*
+* [Map license](./LICENSE.map) *(`office.tmj` and the map visual as well)*
+* [Assets license](./LICENSE.assets) *(the files inside the `tilesets/` folder)*
 
-## Suggestions for a good README
+> [!IMPORTANT]
+> If you add third party assets in your map, do not forget to:
+> 1. Credit the author and license of a tileset with the "tilesetCopyright" property by etiding the tileset in Tiled.
+> 2. Add the tileset license text in *LICENSE.assets*.
+> 3. Credit the author and license of a map with the "mapCopyright" property in the custom properties of the map.
+> 4. Add the map license text in *LICENSE.map*.
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+## ❓ Need Help
 
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+If you have any questions or need further assistance, don't hesitate to ask either by [email](mailto:hello@workadventu.re) or [Discord](https://discord.gg/G6Xh9ZM9aR)!
