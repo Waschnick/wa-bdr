@@ -24,13 +24,23 @@ WA.onInit().then(() => {
             "Euer Ziel ist es, mit eurem Team die Party im Obergeschoss zu erreichen. Dafür müsst ihr 7 Rätsel lösen - und damit 7 Kennwörter herausfinden.",
             "Achtung: Türen schließen nicht automatisch und alle Boards/Webseiten sind mit allen Teams geteilt. Ihr könnt dadurch (mit Absicht oder ausversehen) anderen Teams helfen.",
             "Viel Spaß!"
-        ]; //\n\nDies ist ein EXIT-Game.\n\nEuer Ziel ist es, dass ihr";
+        ];
         currentPopup = WA.ui.openPopup("entry_note_popup", message.join("\n\n"), []);
+    })
+
+    WA.room.area.onEnter('last_note').subscribe(() => {
+        const message: Array<string> = [
+            "An der Tafel steht eine Notiz:",
+            "Ein Bleistift und ein Radiergummi kosten zusammen 2,10 €. Der Bleistift kostet zwei Euro mehr als der Radiergummi. Wie viel kostet der Radiergummi?",
+            "Das Ergebnis (ohne Komma) bringt euch an's Ziel."
+        ];
+        currentPopup = WA.ui.openPopup("last_note_popup", message.join("\n\n"), []);
     })
 
 
     WA.room.area.onLeave('clock').subscribe(closePopup);
     WA.room.area.onLeave('entry_note').subscribe(closePopup);
+    WA.room.area.onLeave('last_note').subscribe(closePopup);
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
