@@ -678,8 +678,25 @@
                  "type":"area",
                  "visible":true,
                  "width":32,
-                 "x":634.568301094617,
-                 "y":711.072724546409
+                 "x":577.90163442795,
+                 "y":797.072724546409
+                }, 
+                {
+                 "height":72.9999666666665,
+                 "id":58,
+                 "name":"note_for_password",
+                 "properties":[
+                        {
+                         "name":"openWebsite",
+                         "type":"string",
+                         "value":"https:\/\/docs.google.com\/document\/d\/1KpEUMXbTeBzZBsw-Med4zGK7uznY4NwI_gx3mRJBBqk\/preview?usp=sharing"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":117.666666666667,
+                 "x":671.333333333333,
+                 "y":671.666683333333
                 }],
          "opacity":1,
          "properties":[
@@ -848,7 +865,7 @@
          "y":0
         }],
  "nextlayerid":99,
- "nextobjectid":58,
+ "nextobjectid":59,
  "orientation":"orthogonal",
  "properties":[
         {

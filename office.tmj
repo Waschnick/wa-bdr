@@ -812,13 +812,13 @@
             3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
             3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 0, 0, 0, 0, 0, 3, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
             3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3,
-            3, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+            3, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
             3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
             3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3,
             3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
             3, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 3, 0, 3, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
             3, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 3, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3,
-            3, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 3, 3,
+            3, 0, 3, 3, 3, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 3, 3,
             3, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 3, 3,
             3, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 3, 3,
             3, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 3, 3, 3, 0, 0, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3,
@@ -869,31 +869,14 @@
                  "name":"notes",
                  "objects":[
                         {
-                         "height":55,
-                         "id":41,
-                         "name":"note_A3",
-                         "properties":[
-                                {
-                                 "name":"openWebsite",
-                                 "type":"string",
-                                 "value":"https:\/\/docs.google.com\/document\/d\/1m-FJK3Eua-m_zHNhJIfpKcSZoNhY9t3pmzVcoo4kU7g\/preview?tab=t.0"
-                                }],
-                         "rotation":0,
-                         "type":"area",
-                         "visible":true,
-                         "width":74,
-                         "x":631,
-                         "y":730
-                        }, 
-                        {
                          "height":72.3333333333334,
                          "id":85,
-                         "name":"printer_note_A2",
+                         "name":"note_A3_head_office",
                          "properties":[
                                 {
                                  "name":"openWebsite",
                                  "type":"string",
-                                 "value":"https:\/\/docs.google.com\/document\/d\/1KpEUMXbTeBzZBsw-Med4zGK7uznY4NwI_gx3mRJBBqk\/preview?usp=sharing"
+                                 "value":"https:\/\/docs.google.com\/document\/d\/1aU9GOdkAE5PbuIsb1sD7FK4nt6d0VZ5UW824m0YhX0A\/previewt?usp=sharing"
                                 }],
                          "rotation":0,
                          "type":"area",
@@ -903,9 +886,26 @@
                          "y":292.666666666667
                         }, 
                         {
-                         "height":86,
+                         "height":100,
+                         "id":41,
+                         "name":"note_A2_desk",
+                         "properties":[
+                                {
+                                 "name":"openWebsite",
+                                 "type":"string",
+                                 "value":"https:\/\/docs.google.com\/document\/d\/18bpfVgG04-LOPZpRjSjACZNhkN7XFJabSjyJYOHTaSs\/preview?usp=sharing"
+                                }],
+                         "rotation":0,
+                         "type":"area",
+                         "visible":true,
+                         "width":83.5,
+                         "x":781,
+                         "y":671
+                        }, 
+                        {
+                         "height":90.5,
                          "id":54,
-                         "name":"note_A1",
+                         "name":"note_A1_printer",
                          "properties":[
                                 {
                                  "name":"openWebsite",
@@ -915,9 +915,9 @@
                          "rotation":0,
                          "type":"area",
                          "visible":true,
-                         "width":98,
-                         "x":772,
-                         "y":681.333333333333
+                         "width":99,
+                         "x":607,
+                         "y":701.833333333333
                         }, 
                         {
                          "height":43.3333333333333,
@@ -1180,7 +1180,7 @@
                                 {
                                  "name":"openWebsite",
                                  "type":"string",
-                                 "value":"https:\/\/partner.bdr.de\/confluence\/display\/dgmpo\/Willkommen+in+der+Digital+Government+MPO"
+                                 "value":""
                                 }],
                          "rotation":0,
                          "type":"area",
@@ -1295,12 +1295,6 @@
                          "height":51,
                          "id":34,
                          "name":"website_A1",
-                         "properties":[
-                                {
-                                 "name":"openWebsite",
-                                 "type":"string",
-                                 "value":"https:\/\/partner.bdr.de\/confluence\/display\/dgmpo\/Willkommen+in+der+Digital+Government+MPO"
-                                }],
                          "rotation":0,
                          "type":"area",
                          "visible":true,
@@ -1309,12 +1303,12 @@
                          "y":542
                         }, 
                         {
-                         "height":134.666666666667,
+                         "height":99.166666666667,
                          "id":51,
                          "name":"website_miro_crosswords",
                          "properties":[
                                 {
-                                 "name":"openWebsite",
+                                 "name":"openTab",
                                  "type":"string",
                                  "value":"https:\/\/miro.com\/app\/board\/uXjVIY3G-mE=\/?share_link_id=305237618248"
                                 }],
@@ -1334,7 +1328,7 @@
          "name":"interactive_elements",
          "opacity":1,
          "type":"group",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
